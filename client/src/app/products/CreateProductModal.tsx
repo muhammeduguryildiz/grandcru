@@ -54,16 +54,16 @@ const CreateProductModal = ({
   return (
     <div className="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full z-20">
       <div className="relative top-20 mx-auto p-5 border w-96 shadow-lg rounded-md bg-white">
-        <Header name="Create New Product" />
+        <Header name="Yeni ürün oluştur" />
         <form onSubmit={handleSubmit} className="mt-5">
           {/* PRODUCT NAME */}
           <label htmlFor="productName" className={labelCssStyles}>
-            Product Name
+            Ürün adı
           </label>
           <input
             type="text"
             name="name"
-            placeholder="Name"
+            placeholder="Ürün"
             onChange={handleChange}
             value={formData.name}
             className={inputCssStyles}
@@ -72,7 +72,7 @@ const CreateProductModal = ({
 
           {/* PRICE */}
           <label htmlFor="productPrice" className={labelCssStyles}>
-            Price
+            Fiyat
           </label>
           <input
             type="number"
@@ -86,7 +86,7 @@ const CreateProductModal = ({
 
           {/* STOCK QUANTITY */}
           <label htmlFor="stockQuantity" className={labelCssStyles}>
-            Stock Quantity
+            Stock durumu
           </label>
           <input
             type="number"
@@ -98,33 +98,19 @@ const CreateProductModal = ({
             required
           />
 
-          {/* RATING */}
-          <label htmlFor="rating" className={labelCssStyles}>
-            Rating
-          </label>
-          <input
-            type="number"
-            name="rating"
-            placeholder="Rating"
-            onChange={handleChange}
-            value={formData.rating}
-            className={inputCssStyles}
-            required
-          />
-
           {/* CREATE ACTIONS */}
           <button
             type="submit"
             className="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700"
           >
-            Create
+            Oluştur
           </button>
           <button
             onClick={onClose}
             type="button"
             className="ml-2 px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-700"
           >
-            Cancel
+            İptal
           </button>
         </form>
       </div>

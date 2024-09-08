@@ -83,7 +83,7 @@ const Sidebar = () => {
       >
         <Image
           src=""
-          alt="edstock-logo"
+          alt="grandcru-logo"
           width={27}
           height={27}
           className="rounded w-8"
@@ -106,31 +106,31 @@ const Sidebar = () => {
 
       {/* LINKS */}
       <div className="flex-grow mt-8">
-        <SidebarLink
+        {/*<SidebarLink
           href="/dashboard"
           icon={Layout}
           label="Dashboard"
           isCollapsed={isSidebarCollapsed}
-        />
+        />*/}
         <SidebarLink
           href="/inventory"
           icon={Archive}
-          label="Inventory"
+          label="Envanter"
           isCollapsed={isSidebarCollapsed}
         />
         <SidebarLink
           href="/products"
           icon={Clipboard}
-          label="Products"
+          label="Ürünler"
           isCollapsed={isSidebarCollapsed}
         />
-        <SidebarLink
+        {/*<SidebarLink
           href="/users"
           icon={User}
           label="Users"
           isCollapsed={isSidebarCollapsed}
-        />
-        <SidebarLink
+        />*/}
+        {/*<SidebarLink
           href="/settings"
           icon={SlidersHorizontal}
           label="Settings"
@@ -141,7 +141,7 @@ const Sidebar = () => {
           icon={CircleDollarSign}
           label="Expenses"
           isCollapsed={isSidebarCollapsed}
-        />
+        />*/}
       </div>
 
       {/* FOOTER */}
