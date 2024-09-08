@@ -1,0 +1,7 @@
+grandcru-management/node_modules
+server/node_modules
+grandcru-management/dist
+server/dist
+grandcru-management/.env
+server/.env
+grandcru-management/.next/
